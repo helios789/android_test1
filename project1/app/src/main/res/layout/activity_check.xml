@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:screenOrientation="landscape"
+    android:gravity="center">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text = "메세지 확인"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:background="@drawable/border"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8"
+            android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <Button
+                        android:id = "@+id/destination"
+                        android:layout_width="match_parent"
+                        android:layout_margin="10dp"
+                        android:layout_height="100dp"
+                        android:background="#404040"
+                        android:textColor="#ffffff"
+                        android:text = "Near Destination"/>
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_margin="10dp"
+                        android:layout_height="100dp"
+                        android:background="#404040"
+                        android:textColor="#ffffff"
+                        android:text = "Payment Option"/>
+                    <Button
+                        android:id = "@+id/arrived"
+                        android:layout_width="match_parent"
+                        android:layout_margin="10dp"
+                        android:layout_height="100dp"
+                        android:background="#404040"
+                        android:textColor="#ff9900"
+                        android:textStyle="bold"
+                        android:text = "Arrived"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="5"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight = "0.5"
+                        android:gravity="center_vertical|bottom"
+                        android:textSize = "20dp"
+                        android:text = "메세지"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight = "0.8"
+                        android:gravity="center_vertical"
+                        android:text = "3호선 라인에서 내릴거에요"
+                        android:textColor="#000000"
+                        android:textStyle = "bold"
+                        android:textSize="40dp"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight = "4"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id = "@+id/checkMainText"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:textSize="30dp"
+                                android:background="@drawable/background_txt" />
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text = "운행중 입니다.."
+                                android:textSize = "20dp"
+                                android:background="@drawable/borderall"/>
+
+                        </LinearLayout>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight = "1.2"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:orientation="horizontal"
+                            android:gravity ="center">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent">
+                            <ImageView
+                                android:id = "@+id/Btn_confitm"
+                                android:layout_width="200dp"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/confirm" />
+                            <ImageView
+                                android:id = "@+id/Btn_postpone"
+                                android:layout_width="200dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp"
+                                android:src="@drawable/postpone" />
+                            <ImageView
+                                android:id = "@+id/Btn_request"
+                                android:layout_width="200dp"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/request" />
+                            </LinearLayout>
+                        </RelativeLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    <ImageView
+        android:id = "@+id/taxi"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/taxi_black"/>
+</RelativeLayout>
+
+
